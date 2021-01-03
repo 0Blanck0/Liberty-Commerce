@@ -1,0 +1,52 @@
+.cookies_container {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    background: rgba(114, 46, 141, 0.747);
+    z-index: 2051;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cookies_content_flex {
+    text-align: center;
+    color: #FFF;
+    font-size: 20px;
+    font-family: Helvetica, Sans-serif, serif;
+    font-style: italic;
+}
+
+.close-cookies {
+    cursor: pointer;
+}
+
+button {
+    text-decoration:none;
+    color:#FFF;
+    font-family: Helvetica, Sans-serif, serif;
+}
+
+#cookies_btn {
+    margin: auto;
+    background: linear-gradient(to right, #fe17d8, #b700ff, #461dfc);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 7vw;
+    height: 2vw;
+    animation: slidebg 7s linear infinite;
+    color: #FFF;
+}
+
+#cookies_btn:hover {
+    animation: slidebg 3s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 30vw;
+    }
+}

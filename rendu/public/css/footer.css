@@ -1,0 +1,30 @@
+.social_container {
+    margin: auto;
+    text-align: center;
+    padding-top: 5px;
+    border: 1px solid;
+    border-color: #fe17d8 #b700ff #461dfc;
+}
+
+.social_container img {
+    width: auto;
+    max-width: 30px;
+    height: auto;
+    text-align: center;
+}
+
+.social_container img:first-child {
+    margin-right: 10px;
+}
+
+.social_media {
+    cursor: pointer;
+}
+
+footer {
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

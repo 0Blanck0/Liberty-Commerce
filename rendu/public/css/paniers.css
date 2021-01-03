@@ -1,0 +1,108 @@
+html {
+    background-image: url("../img/background/log-background.png");
+    margin: auto;
+    width: 100%;
+}
+
+main {
+    display: block;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    width: auto;
+    height: 100%;
+}
+
+.panier_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title_container {
+    flex: 1 1 auto;
+    text-align: center;
+    color: #FFF;
+    text-decoration: underline;
+    font-family: Helvetica, Sans-serif, serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.table_container {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.table_container table {
+    text-decoration: none;
+    margin: auto;
+    color: #FFF;
+    font-family: Helvetica, Sans-serif, serif;
+    background-color: rgba(114, 46, 141, 0.747);
+    font-size: larger;
+    margin-bottom: 15px;
+}
+
+.table_container table caption {
+    margin-bottom: 15px;
+}
+
+.table_container table tbody tr td {
+    padding: 5px;
+}
+
+td {
+
+    border: 5px solid rgba(0, 0, 0, 0.856);
+    border-radius: 3px;
+    margin: 0;
+    width: 200px;
+    height: 30px;
+}
+
+.btn_content {
+    flex: 1 1 auto;
+}
+
+a {
+    margin: auto;
+    margin-bottom: 15px;
+    margin-left: 150px;
+    text-decoration:none;
+    color:#FFF;
+    font-family: Helvetica, Sans-serif, serif;
+}
+
+.rainbow_btn {
+    margin: auto;
+    margin-bottom: 15px;
+    width:calc(7vw + 6px);
+    height:calc(2vw + 6px);
+    background: linear-gradient(to right, #fe17d8, #b700ff, #461dfc);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.rainbow_btn:after {
+    content: attr(alt);
+    width: 7vw;
+    height: 2vw;
+    background-color: #222222;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rainbow_btn:hover {
+    animation: slidebg 3s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 30vw;
+    }
+}

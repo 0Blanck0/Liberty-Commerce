@@ -1,0 +1,63 @@
+html {
+    background-image: url("../img/background/cat-background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+h2 {
+    margin: auto;
+    color: #FFF;
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    border-top: 1px solid #222222;
+    padding-top: 5px;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    text-decoration:none;
+    color:#FFF;
+    font-family: Helvetica, Sans-serif, serif;
+}
+
+button {
+    margin: auto;
+    width:calc(7vw + 6px);
+    height:calc(2vw + 6px);
+    background: linear-gradient(to right, #fe17d8, #b700ff, #461dfc);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+button {
+    content: attr(alt);
+    width: 7vw;
+    height: 2vw;
+    background-color: #222222;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    animation: slidebg 3s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 30vw;
+    }
+}

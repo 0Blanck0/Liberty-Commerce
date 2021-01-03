@@ -1,0 +1,135 @@
+html {
+    background-image: url("../img/background/cat-background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 100%;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, Sans-serif, serif;
+}
+
+.img.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: auto;
+    min-height: auto;
+}
+
+main {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.catalogue_container {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.catalogue_row {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px 2em;
+}
+
+.product_container {
+    flex: 1 1 auto;
+    padding: 15px;
+    margin: 0;
+}
+
+.product_box {
+    background-color: rgba(114, 46, 141, 0.747);
+    border: 5px solid rgba(0, 0, 0, 0.856);
+    border-radius: 3px;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+.product_header {
+    margin-bottom: 5px;
+}
+
+.img_container img {
+    max-width: 100px;
+    max-height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.89);
+    border-radius: 5px;
+}
+
+.title_container {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: cursive;
+    transition: .2s;
+}
+
+.product_box:hover .title_container {
+    color: #c876ff;
+}
+
+.btn_container button {
+    margin-top: 4px;
+    background-color: transparent;
+    background-size: 400%;
+    color: #FFF;
+    font-style: italic;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+a {
+    margin: auto;
+    margin-bottom: 15px;
+    text-decoration:none;
+    color:#FFF;
+}
+
+.rainbow_btn {
+    width:calc(7vw + 6px);
+    height:calc(2vw + 6px);
+    background: linear-gradient(to right, #fe17d8, #b700ff, #461dfc);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.rainbow_btn:after {
+    content: attr(alt);
+    width: 7vw;
+    height: 2vw;
+    background-color: #222222;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rainbow_btn:hover {
+    animation: slidebg 3s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 30vw;
+    }
+}
